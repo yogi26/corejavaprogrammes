@@ -8,6 +8,8 @@ public class Consecutive {
 		int i,len=arr.length,k=0,j,f=0;
 		char ch[]=new char[13];
 		
+		
+		
 		for(i=1;i<len;i++)
 		{
 			if(arr[i-1]==arr[i])
@@ -15,7 +17,7 @@ public class Consecutive {
 				ch[k++]=arr[i];
 			}
 		}//This loop gives only double characters
-		System.out.println(ch);
+		//System.out.println(ch);
 		for(i=0;i<k;i++)
 		{
 			char c=ch[i];
