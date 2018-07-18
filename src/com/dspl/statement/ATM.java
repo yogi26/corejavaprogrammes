@@ -29,7 +29,7 @@ public class ATM
 			return false;
 		}
 	}
-	public void withdrawAmout(double amount) throws InsufficientBalanceException,InvalidBalanceException
+	public void withdrawAmout(double amount)throws ATMException //throws InsufficientBalanceException,InvalidBalanceException
 	{		
 			if(isSufficientBalance(amount))
 			{

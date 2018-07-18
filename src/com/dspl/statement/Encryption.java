@@ -2,11 +2,10 @@ package com.dspl.statement;
 
 public class Encryption 
 {
+	StringBuilder str=new StringBuilder("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz");
 	
 	public String getEncryptedMsg(String str2, int key)
-	{
-		String str="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-		
+	{	
 		StringBuilder str3=new StringBuilder();
 		int f=0;
 		for(int i=0;i<str2.length();i++)
@@ -33,8 +32,8 @@ public class Encryption
 	}
 	public String getdecryptedMsg(String str2,int key)
 	{
-		StringBuilder str=new StringBuilder("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz");
 		str=str.reverse();
+		
 		StringBuilder str3=new StringBuilder();
 		int f=0;
 		for(int i=0;i<str2.length();i++)
