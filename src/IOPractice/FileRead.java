@@ -36,7 +36,6 @@ public class FileRead
 		}
 		
 		return str;
-		
 	}
 	
 }

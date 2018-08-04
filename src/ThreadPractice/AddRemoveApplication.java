@@ -3,12 +3,11 @@ package ThreadPractice;
 public class AddRemoveApplication {
 
 	public static void main(String[] args)throws Exception
-	{
-		AddRemoveArray obj=new AddRemoveArray();
-		
-		Thread t1=new Thread(obj);
-		Thread t2=new Thread(obj);
-	
+	{	
+			SharedArray sh=new SharedArray();
+			Pusher t1=new Pusher(sh);
+			Puller t2=new Puller(sh);
+
 			t1.start();
 			t2.start();
 
