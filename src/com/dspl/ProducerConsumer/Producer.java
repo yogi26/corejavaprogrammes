@@ -12,12 +12,12 @@ public class Producer implements Runnable
 	}
 	public void run()
 	{	
-		for(int i=0;i<6;i++)
+		for(int i=0;i<5;i++)
 		{
 			sh.push(i+1);
 			try 
 			{
-				Thread.sleep(2000);
+				Thread.sleep(3000);
 			}
 			catch (InterruptedException e)
 			{

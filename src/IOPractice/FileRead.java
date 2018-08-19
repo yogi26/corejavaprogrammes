@@ -12,7 +12,7 @@ public class FileRead
 		String str=new String();
 		try
 		{
-			fin=new FileInputStream("C:/Users/HP/Desktop/JavaFiles/account.txt");
+			fin=new FileInputStream("C:/Users/HP/Desktop/abc.txt");
 		}
 		catch(FileNotFoundException e)
 		{

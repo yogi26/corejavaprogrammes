@@ -4,7 +4,6 @@ public class SharedObject
 {
 	int i,val;
 	int arr[]={-1,-1,-1,-1,-1};
-	boolean flag=false;
 	public synchronized void push(int val)
 	{
 		if(!isEmptyArray())

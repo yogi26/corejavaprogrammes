@@ -12,12 +12,12 @@ public class Consumer implements Runnable
 	}
 	public void run()
 	{
-		for(int i=0;i<6;i++)
+		for(int i=0;i<5;i++)
 		{
 			sh.pull();
 			try
 			{
-				Thread.sleep(1000);
+				Thread.sleep(3000);
 			}
 			catch (InterruptedException e) 
 			{
